@@ -1,0 +1,40 @@
+     /*在750px的*/
+     html{
+     	font-size:100px;
+     } 
+     /*当屏幕宽度小于等于414px会起作用*/
+     @media screen and (max-width:415px){
+        html{
+        	font-size:55.2px;
+        }
+     } 
+     /*当屏幕宽度小于等于375px会起作用*/
+     @media screen and (max-width:376px){
+        html{
+        	font-size:50px;
+        }
+     } 
+     /*当屏幕宽度小于等于360px会起作用*/
+     @media screen and (max-width:361px){
+          html{
+          	font-size:48px;
+          }
+     }
+     /*当屏幕宽度小于等于320px会起作用*/
+     @media screen and (max-width:321px){
+          html{
+          	font-size:42.66667px;
+          }
+     }
+     *{
+       margin:0;
+     }
+     body{
+         background:#fbfbfb;
+     }
+
+
+
+
+
+

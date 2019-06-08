@@ -1,23 +1,51 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-
-Vue.use(Router)
+import Index from "@/views/Index"
+import Confirm from "@/views/Confirm";
+import Sign from "@/views/Sign";
+import Save from "@/views/Save";
+import Notice from "@/views/Notice"
+import Complate from "@/views/Complate"
+import Check from "@/views/Check"
+import Success from "@/views/Success"
+Vue.use(Router);
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
-  ]
+    routes: [
+        {
+            path: "/",
+            component: Index
+        },
+        {
+            path: "/confirm",
+            component: Confirm
+        },
+        {
+            path:"/sign",
+            component: Sign
+        },
+        {
+            path:"/save",
+            component: Save
+        },
+        {
+            path:"/notice",
+            component: Notice
+        },
+        {
+            path:"/complate",
+            component: Complate
+
+        },
+        {
+            path:"/check",
+            component: Check
+
+        },
+        {
+            path:"/success",
+            component: Success
+
+        }
+    ]
 })
